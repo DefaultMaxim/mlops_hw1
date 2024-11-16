@@ -1,0 +1,10 @@
+setup.py
+src/VectorStandardization.cpp
+src/bindings.cpp
+vector_standardization/__init__.py
+vector_standardization.egg-info/PKG-INFO
+vector_standardization.egg-info/SOURCES.txt
+vector_standardization.egg-info/dependency_links.txt
+vector_standardization.egg-info/not-zip-safe
+vector_standardization.egg-info/requires.txt
+vector_standardization.egg-info/top_level.txt
