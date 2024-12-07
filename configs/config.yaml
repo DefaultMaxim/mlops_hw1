@@ -1,0 +1,6 @@
+# configs/config.yaml
+defaults:
+  - model: model
+  - data: data
+  - trainer: trainer
+  - logging: logging
