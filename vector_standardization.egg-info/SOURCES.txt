@@ -1,7 +1,9 @@
+MANIFEST.in
+pyproject.toml
 setup.py
 src/VectorStandardization.cpp
+src/VectorStandardization.h
 src/bindings.cpp
-vector_standardization/__init__.py
 vector_standardization.egg-info/PKG-INFO
 vector_standardization.egg-info/SOURCES.txt
 vector_standardization.egg-info/dependency_links.txt

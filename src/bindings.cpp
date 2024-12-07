@@ -4,10 +4,11 @@
 
 namespace py = pybind11;
 
-PYBIND11_MODULE(vector_standardization, m) {
-    m.doc() = "Python bindings for vector standardization";
-
+PYBIND11_MODULE(_vector_standardization, m) {
+    m.doc() = "Module provides vector standardization functionality";
     m.def("standardize", &VectorStandardization::standardize,
-          "Standardize a vector (mean 0, stddev 1)",
-          py::arg("input_vector"));
+          py::arg("input_vector"),
+          "Standardize a given vector of doubles");
 }
+
+
