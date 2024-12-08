@@ -56,7 +56,6 @@ tornado==6.4.2
 tqdm==4.67.1
 traitlets==5.14.3
 typing_extensions==4.12.2
-# vector_standardization @ file:///Users/maksimegorov/PythonProjects/mlops_hw/dist/vector_standardization-0.1-cp312-cp312-macosx_10_9_universal2.whl#sha256=1c316e43a0e1575996da30d45ff5b46fdfd63e0474ab80ae0b29bb3a3b1a4540
 wcwidth==0.2.13
 wheel==0.45.1
 yarl==1.18.3

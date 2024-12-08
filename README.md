@@ -123,6 +123,6 @@ Hydra создаст рабочую директорию в outputs/<дата_и
 ## Тестирование
 1. Проверьте, что датасет возвращает стандартизированные данные:
    ```bash
-   python -c "from dataset import CustomDataset; print(CustomDataset([[1.0,2.0,3.0]]).__getitem__(0))"
+   python -c "from dataset import CustomDataset; print(CustomDataset([[11.0,4.0, -34.0]]).__getitem__(0))"
     ```
 2. Запустите обучение и убедитесь, что (_train_loss_ и _val_loss_) логируются.
