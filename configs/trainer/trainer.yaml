@@ -1,3 +1,3 @@
-max_epochs: 5
-accelerator: "cpu"  # Или "cpu", в зависимости от доступных устройств
-devices: 1          # Можно указать "auto" для автоматического выбора
+max_epochs: 100
+accelerator: "gpu"  # Или "cpu", в зависимости от доступных устройств
+devices: 'auto' 

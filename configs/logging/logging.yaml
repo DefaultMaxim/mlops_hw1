@@ -1,0 +1,4 @@
+logging:
+  save_dir: "logs"
+  name: "training_logs"
+  log_graph: true

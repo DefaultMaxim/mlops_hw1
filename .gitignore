@@ -8,3 +8,4 @@ outputs/
 *.egg-info
 dist/
 .DS_Store
+logs
