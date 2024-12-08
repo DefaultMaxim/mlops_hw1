@@ -15,6 +15,9 @@ mlops/
   │   ├─ VectorStandardization.cpp
   │   ├─ VectorStandardization.h
   │   ├─ bindings.cpp
+  ├─ .dvc/
+      ├─ .gitignore
+      ├─ config
   ├─ configs/
   │   ├─ config.yaml
   │   ├─ model/
@@ -52,7 +55,7 @@ mlops/
    Модель и DataModule реализованы в `model.py` и `datamodule.py`. DataModule использует биндинги для предобработки данных.
 
 4. **DVC**  
-   Используется для трекинга данных и артефактов. Пример: трекинг исходного датасета.
+   Используется для трекинга данных.
 
 ## Установка
 
@@ -61,7 +64,7 @@ mlops/
 1. Клонируйте репозиторий:
      ```bash
      git clone https://github.com/DefaultMaxim/mlops_hw1.git
-     cd https://github.com/DefaultMaxim/mlops_hw1.git
+     cd mlops_hw1.git
      ```
 2. Создайте виртуальное окружение и установите зависимости:
       ```bash
@@ -88,8 +91,14 @@ mlops/
     ```
 3. Настройте remote для хранения данных:
     ```bash
-    dvc remote add -d myremote s3://mybucket/path/to/storage
+    mkdir -p /path/to/local/remote
+    dvc remote add -d mylocalremote /path/to/local/remote
+    dvc add data/raw_data.csv
     dvc push
+    ```
+4. Восстановление данных:
+    ```bash
+    dvc pull
     ```
    
 ## Использование
@@ -125,4 +134,8 @@ Hydra создаст рабочую директорию в outputs/<дата_и
    ```bash
    python -c "from dataset import CustomDataset; print(CustomDataset([[11.0,4.0, -34.0]]).__getitem__(0))"
     ```
-2. Запустите обучение и убедитесь, что (_train_loss_ и _val_loss_) логируются.
+2. Запустите обучение и убедитесь, что (```train_loss``` и ```val_loss```) логируются.
+   ```bash
+   python train.py
+   tensorboard --logdir logs
+   ```
