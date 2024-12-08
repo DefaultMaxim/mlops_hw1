@@ -64,12 +64,14 @@ mlops/
      cd https://github.com/DefaultMaxim/mlops_hw1.git
      ```
 2. Создайте виртуальное окружение и установите зависимости:
-      ```python3 -m venv venv
+      ```bash
+      python3 -m venv venv
       source venv/bin/activate
       pip install -r requirements.txt
       ```
 3. Собирите модуль С++ с биндингами:
-     ```python3 -m build
+     ```bash
+     python3 -m build
      pip install dist/vector_standardization-0.1-*.whl
      ```
    
