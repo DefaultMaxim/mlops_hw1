@@ -3,7 +3,6 @@ __pycache__
 .ipynb_checkpoints
 dist
 vector_standardization.egg-info
-.dvc/
 lightning_logs/
 outputs/
 *.egg-info
