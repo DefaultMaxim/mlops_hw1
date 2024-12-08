@@ -1,0 +1,6 @@
+[core]
+    remote = mylocalremote
+['remote "myremote"']
+    url = s3://mybucket/path/to/storage
+['remote "mylocalremote"']
+    url = ../local/remote
