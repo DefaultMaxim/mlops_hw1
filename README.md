@@ -60,8 +60,8 @@ mlops/
 
 1. Клонируйте репозиторий:
      ```bash
-     git clone <repository_url>
-     cd <repository_name>
+     git clone https://github.com/DefaultMaxim/mlops_hw1.git
+     cd https://github.com/DefaultMaxim/mlops_hw1.git
      ```
 2. Создайте виртуальное окружение и установите зависимости:
       ```python3 -m venv venv
